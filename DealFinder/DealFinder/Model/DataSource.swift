@@ -32,7 +32,7 @@ class DataSource {
     
     let apiKey = "gz3qn6zut3aww5sep4xtrjzu";
     let baseUrlPath = "http://api.walmartlabs.com/"
-    let firstPagePath = "v1/paginated/items?category=3944&count=10&apiKey=";
+    let firstPagePath = "v1/paginated/items?category=3944&count=20&apiKey=";
     
     init(client: FetchClient) {
         walmartClient = client
