@@ -27,7 +27,7 @@ class ItemTableViewCell: UITableViewCell {
     func updateWithItem(item: Item) {
         
         nameLabel.text = item.name
-        descriptionLabel.text = item.shortDescription
+        descriptionLabel.text = item.shortDescription.removingPercentEncoding
         if let validSalePrice = item.salePrice {
             let salesPrice = String(format: "$%.02f", validSalePrice)
             priceLabel.text = "\(salesPrice)"
