@@ -79,7 +79,7 @@ class DataSource {
         }
     }
     
-    // for decoding purposes
+    // for testing purposes
     fileprivate func extractJSONTypeFromData<T>(_ data: Data) -> T? {
         
         var json: T?
