@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Byg-a6-FSV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Deal Finder-->
+        <scene sceneID="iVl-Ue-ITY">
+            <objects>
+                <tableViewController id="Kiv-hc-2a0" customClass="MainTableViewController" customModule="DealFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uUs-5K-IdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.028580255806446075" green="0.56063240766525269" blue="0.97086185216903687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="120" id="uNp-Q5-Ufu" customClass="ItemTableViewCell" customModule="DealFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNp-Q5-Ufu" id="ZNA-S0-Gbg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05S-LV-cYf">
+                                            <rect key="frame" x="8" y="10" width="359" height="105"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walmart-logo" translatesAutoresizingMaskIntoConstraints="NO" id="nnZ-OM-xxu" customClass="RemoteImageView" customModule="DealFinder" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="10" width="91" height="85"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="91" id="ARI-ez-8ii"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beats Wireless Headphones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45s-Hw-9WO">
+                                                    <rect key="frame" x="107" y="8" width="244" height="16.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="33" id="au5-zc-yEl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="These stereophones are as easy to wear as they are to use! Lightweight and comfortable design is ideal for extended listening." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yox-nQ-t7X">
+                                                    <rect key="frame" x="107" y="26.5" width="174" height="67.5"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$299.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h34-ho-9su">
+                                                    <rect key="frame" x="280" y="75" width="71" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="sQv-cP-ZZs"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yox-nQ-t7X" secondAttribute="bottom" constant="7" id="NXL-rN-IgP"/>
+                                                <constraint firstItem="45s-Hw-9WO" firstAttribute="top" secondItem="05S-LV-cYf" secondAttribute="top" constant="8" id="THb-Oh-lEF"/>
+                                                <constraint firstAttribute="trailing" secondItem="h34-ho-9su" secondAttribute="trailing" constant="8" id="XD5-Co-CXb"/>
+                                                <constraint firstItem="45s-Hw-9WO" firstAttribute="leading" secondItem="nnZ-OM-xxu" secondAttribute="trailing" constant="8" id="YSI-PI-XFs"/>
+                                                <constraint firstAttribute="trailing" secondItem="45s-Hw-9WO" secondAttribute="trailing" constant="8" id="Yfx-SI-Wu8"/>
+                                                <constraint firstAttribute="bottom" secondItem="nnZ-OM-xxu" secondAttribute="bottom" constant="10" id="fG3-s8-L2J"/>
+                                                <constraint firstItem="nnZ-OM-xxu" firstAttribute="leading" secondItem="05S-LV-cYf" secondAttribute="leading" constant="8" id="nIy-Ma-VqE"/>
+                                                <constraint firstAttribute="trailing" secondItem="yox-nQ-t7X" secondAttribute="trailing" constant="78" id="nmD-9V-m2O"/>
+                                                <constraint firstItem="yox-nQ-t7X" firstAttribute="leading" secondItem="45s-Hw-9WO" secondAttribute="leading" id="peb-Dw-9Yc"/>
+                                                <constraint firstItem="yox-nQ-t7X" firstAttribute="top" secondItem="45s-Hw-9WO" secondAttribute="bottom" constant="2" id="sMB-3X-cB7"/>
+                                                <constraint firstAttribute="bottom" secondItem="h34-ho-9su" secondAttribute="bottom" constant="10" id="uck-cW-lxB"/>
+                                                <constraint firstItem="nnZ-OM-xxu" firstAttribute="top" secondItem="05S-LV-cYf" secondAttribute="top" constant="10" id="vLr-2o-3if"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="05S-LV-cYf" secondAttribute="trailing" constant="8" id="aDH-Kb-cfX"/>
+                                        <constraint firstItem="05S-LV-cYf" firstAttribute="top" secondItem="ZNA-S0-Gbg" secondAttribute="top" constant="10" id="hSW-aN-nBw"/>
+                                        <constraint firstAttribute="bottom" secondItem="05S-LV-cYf" secondAttribute="bottom" constant="5" id="j37-TV-0AW"/>
+                                        <constraint firstItem="05S-LV-cYf" firstAttribute="leading" secondItem="ZNA-S0-Gbg" secondAttribute="leading" constant="8" id="zEr-1s-cwG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="containingView" destination="05S-LV-cYf" id="fP7-Pi-k0Z"/>
+                                    <outlet property="descriptionLabel" destination="yox-nQ-t7X" id="929-X6-bp7"/>
+                                    <outlet property="itemImageView" destination="nnZ-OM-xxu" id="C5b-SR-87G"/>
+                                    <outlet property="nameLabel" destination="45s-Hw-9WO" id="sc0-36-EBX"/>
+                                    <outlet property="priceLabel" destination="h34-ho-9su" id="tDV-4G-pbP"/>
+                                    <segue destination="aBy-vM-bSJ" kind="show" id="Jbs-m1-5VK"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoadingTableViewCell" rowHeight="120" id="GSv-5Z-clM" customClass="LoadingTableViewCell" customModule="DealFinder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="148" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GSv-5Z-clM" id="OSw-rX-fJQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4n-ce-Pwv">
+                                            <rect key="frame" x="8" y="10" width="359" height="105"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf8-Vw-ESD" customClass="ActivitySpinnerView" customModule="DealFinder" customModuleProvider="target">
+                                                    <rect key="frame" x="119.5" y="2.5" width="120" height="100"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="Wi8-rp-Rl1"/>
+                                                        <constraint firstAttribute="width" constant="120" id="YLN-Ne-7HR"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Wf8-Vw-ESD" firstAttribute="centerY" secondItem="Q4n-ce-Pwv" secondAttribute="centerY" id="TCF-1Y-Hh3"/>
+                                                <constraint firstItem="Wf8-Vw-ESD" firstAttribute="centerX" secondItem="Q4n-ce-Pwv" secondAttribute="centerX" id="fGM-TQ-zEU"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Q4n-ce-Pwv" secondAttribute="bottom" constant="5" id="VYj-DW-1w7"/>
+                                        <constraint firstAttribute="trailing" secondItem="Q4n-ce-Pwv" secondAttribute="trailing" constant="8" id="cfm-CH-eg6"/>
+                                        <constraint firstItem="Q4n-ce-Pwv" firstAttribute="top" secondItem="OSw-rX-fJQ" secondAttribute="top" constant="10" id="o5m-rQ-sdF"/>
+                                        <constraint firstItem="Q4n-ce-Pwv" firstAttribute="leading" secondItem="OSw-rX-fJQ" secondAttribute="leading" constant="8" id="uYP-hh-Rus"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="containingView" destination="Q4n-ce-Pwv" id="dI2-pJ-kMj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kiv-hc-2a0" id="SNL-Qx-Icd"/>
+                            <outlet property="delegate" destination="Kiv-hc-2a0" id="Q6E-g1-Fjz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Deal Finder" id="VjN-r8-AIv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXV-uX-DNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.60000000000002" y="101.19940029985008"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Jno-Zg-cIL">
+            <objects>
+                <viewController id="aBy-vM-bSJ" customClass="DetailViewController" customModule="DealFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ha3-ih-8sK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MK7-uM-ZAu" customClass="RemoteImageView" customModule="DealFinder" customModuleProvider="target">
+                                <rect key="frame" x="48.5" y="76" width="278" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="aJw-Aj-ORo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beats Wireless Headphones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GF-Je-Vu5">
+                                <rect key="frame" x="48.5" y="313" width="278" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ftz-yI-vzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$299.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIZ-sh-0bn">
+                                <rect key="frame" x="139.5" y="383" width="94" height="28"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="L4d-bi-SsK">
+                                <rect key="frame" x="54" y="436" width="278" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="MSRP $299.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRN-Lo-C16">
+                                <rect key="frame" x="237" y="383" width="89" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="11"/>
+                                <color key="textColor" red="0.86154064119999996" green="0.81471311130000001" blue="0.38457836829999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Price:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxU-Ev-iRB">
+                                <rect key="frame" x="57" y="383" width="74" height="16.5"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hFc-BQ-hEH" firstAttribute="trailing" secondItem="MK7-uM-ZAu" secondAttribute="trailing" constant="48.5" id="1CF-rm-1rH"/>
+                            <constraint firstItem="L4d-bi-SsK" firstAttribute="leading" secondItem="hFc-BQ-hEH" secondAttribute="leading" constant="54" id="4EN-hK-o80"/>
+                            <constraint firstItem="3GF-Je-Vu5" firstAttribute="top" secondItem="MK7-uM-ZAu" secondAttribute="bottom" constant="8" id="9Bl-kF-8N9"/>
+                            <constraint firstItem="L4d-bi-SsK" firstAttribute="top" secondItem="cRN-Lo-C16" secondAttribute="bottom" constant="37" id="BmX-Oa-4jM"/>
+                            <constraint firstItem="MK7-uM-ZAu" firstAttribute="top" secondItem="hFc-BQ-hEH" secondAttribute="top" constant="12" id="CjD-cs-abV"/>
+                            <constraint firstItem="hFc-BQ-hEH" firstAttribute="trailing" secondItem="L4d-bi-SsK" secondAttribute="trailing" constant="43" id="Fb9-BF-S1X"/>
+                            <constraint firstItem="mxU-Ev-iRB" firstAttribute="top" secondItem="3GF-Je-Vu5" secondAttribute="bottom" constant="8" id="HhI-0D-nE0"/>
+                            <constraint firstItem="cRN-Lo-C16" firstAttribute="leading" secondItem="AIZ-sh-0bn" secondAttribute="trailing" constant="2.5" id="LDp-0q-r4F"/>
+                            <constraint firstItem="3GF-Je-Vu5" firstAttribute="centerX" secondItem="MK7-uM-ZAu" secondAttribute="centerX" id="LFk-Cu-M1B"/>
+                            <constraint firstItem="3GF-Je-Vu5" firstAttribute="width" secondItem="MK7-uM-ZAu" secondAttribute="width" id="WYg-5X-VIy"/>
+                            <constraint firstItem="AIZ-sh-0bn" firstAttribute="top" secondItem="3GF-Je-Vu5" secondAttribute="bottom" constant="8" id="X9t-4v-G61"/>
+                            <constraint firstItem="MK7-uM-ZAu" firstAttribute="leading" secondItem="hFc-BQ-hEH" secondAttribute="leading" constant="48.5" id="YGK-Dz-DEz"/>
+                            <constraint firstItem="AIZ-sh-0bn" firstAttribute="centerX" secondItem="3GF-Je-Vu5" secondAttribute="centerX" constant="-1" id="dNV-r4-OKa"/>
+                            <constraint firstItem="L4d-bi-SsK" firstAttribute="top" secondItem="AIZ-sh-0bn" secondAttribute="bottom" constant="25" id="ekS-3X-Xvo"/>
+                            <constraint firstItem="hFc-BQ-hEH" firstAttribute="bottom" secondItem="L4d-bi-SsK" secondAttribute="bottom" constant="20" id="fVl-ky-V8H"/>
+                            <constraint firstItem="AIZ-sh-0bn" firstAttribute="leading" secondItem="mxU-Ev-iRB" secondAttribute="trailing" constant="8.5" id="gw3-ER-Vwa"/>
+                            <constraint firstItem="cRN-Lo-C16" firstAttribute="top" secondItem="3GF-Je-Vu5" secondAttribute="bottom" constant="8" id="r8Q-SD-MGw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hFc-BQ-hEH"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="MK7-uM-ZAu" id="UzF-jW-HnJ"/>
+                        <outlet property="itemLongDescTextView" destination="L4d-bi-SsK" id="fIv-Vh-f4l"/>
+                        <outlet property="itemMSRPLabel" destination="cRN-Lo-C16" id="eNA-D6-KyD"/>
+                        <outlet property="itemNameLabel" destination="3GF-Je-Vu5" id="Upu-Qx-rxu"/>
+                        <outlet property="itemSalePriceLabel" destination="AIZ-sh-0bn" id="j3W-uJ-SJ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1OO-rQ-g4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232.8" y="98.50074962518741"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="96z-ho-9ES">
+            <objects>
+                <navigationController id="Byg-a6-FSV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="96Z-A8-DQk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kiv-hc-2a0" kind="relationship" relationship="rootViewController" id="cLs-gq-5d7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sE-8d-TmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-530" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="walmart-logo" width="500" height="500"/>
+    </resources>
+</document>
