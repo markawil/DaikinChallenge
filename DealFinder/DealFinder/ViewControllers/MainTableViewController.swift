@@ -116,7 +116,7 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        if items.count == indexPath.row {
+        if !usingStubbedItems && (items.count == indexPath.row) {
             loadNextPageOfItems()
         }
     }
