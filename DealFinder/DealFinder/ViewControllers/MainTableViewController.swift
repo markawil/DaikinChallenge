@@ -50,6 +50,7 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
             return
         }
         
+        usingStubbedItems = false
         showSpinner()
         dataSource?.itemsForNextPage(withCompletion: { (items, errorMessage) in
             self.stopSpinner()
@@ -63,8 +64,11 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
         })
     }
     
+    var usingStubbedItems: Bool = false
+    
     func loadStubbedItems() {
         
+        usingStubbedItems = true
         if let validStubbedItems = dataSource?.stubbedItemsForTesting() {
             items = validStubbedItems
             tableView.reloadData()
@@ -74,6 +78,10 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if usingStubbedItems {
+            return items.count
+        }
         
         if items.count > 0 {
             return items.count + 1
