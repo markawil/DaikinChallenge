@@ -49,8 +49,7 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
             self.showError(errorMessage: "Device out of Memory", forViewController: self)
             return
         }
-        
-        usingStubbedItems = false
+                
         showSpinner()
         dataSource?.itemsForNextPage(withCompletion: { (items, errorMessage) in
             self.stopSpinner()
