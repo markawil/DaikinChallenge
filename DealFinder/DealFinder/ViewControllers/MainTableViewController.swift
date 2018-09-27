@@ -122,9 +122,8 @@ class MainTableViewController: UITableViewController, ErrorMessageViewController
         }
     }
     
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // MARK: - Segue Navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let selectedRow = self.tableView.indexPathForSelectedRow?.row {
